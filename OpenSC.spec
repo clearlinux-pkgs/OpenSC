@@ -4,7 +4,7 @@
 #
 Name     : OpenSC
 Version  : 0.23.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/OpenSC/OpenSC/releases/download/0.23.0/opensc-0.23.0.tar.gz
 Source0  : https://github.com/OpenSC/OpenSC/releases/download/0.23.0/opensc-0.23.0.tar.gz
 Summary  : OpenSC PKCS#11 module
@@ -95,7 +95,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1671133204
+export SOURCE_DATE_EPOCH=1671146602
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -115,7 +115,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1671133204
+export SOURCE_DATE_EPOCH=1671146602
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/OpenSC
 cp %{_builddir}/opensc-%{version}/COPYING %{buildroot}/usr/share/package-licenses/OpenSC/d1dd9b27a6a8d429ac99b8aed5c22516b4933a96
@@ -212,9 +212,6 @@ cp %{_builddir}/opensc-%{version}/src/common/LICENSE.compat_getopt %{buildroot}/
 %defattr(-,root,root,-)
 /usr/lib64/libopensc.so
 /usr/lib64/libsmm-local.so
-/usr/lib64/onepin-opensc-pkcs11.so
-/usr/lib64/opensc-pkcs11.so
-/usr/lib64/pkcs11-spy.so
 /usr/lib64/pkgconfig/opensc-pkcs11.pc
 
 %files doc
@@ -228,6 +225,9 @@ cp %{_builddir}/opensc-%{version}/src/common/LICENSE.compat_getopt %{buildroot}/
 /usr/lib64/libopensc.so.8.1.0
 /usr/lib64/libsmm-local.so.8
 /usr/lib64/libsmm-local.so.8.1.0
+/usr/lib64/onepin-opensc-pkcs11.so
+/usr/lib64/opensc-pkcs11.so
+/usr/lib64/pkcs11-spy.so
 /usr/lib64/pkcs11/onepin-opensc-pkcs11.so
 /usr/lib64/pkcs11/opensc-pkcs11.so
 /usr/lib64/pkcs11/pkcs11-spy.so
