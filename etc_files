@@ -1,0 +1,8 @@
+/etc/:
+/etc/eac/cvc:
+/etc/eac:
+DESCHSMCVCA00001
+DESRCACC100001
+cvc
+eac
+opensc.conf

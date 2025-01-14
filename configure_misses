@@ -1,9 +1,11 @@
+Configure miss: Valgrind tool sgcheck
 Configure miss: clang-tidy
 Configure miss: gengetopt
 Configure miss: gio/gio.h presence
 Configure miss: git checkout
 Configure miss: memset_s
 Configure miss: pcsclite.h presence
+Configure miss: whether C compiler accepts -Wshorten-64-to-32
 Configure miss: whether C compiler accepts -Wunknown-warning-option
 Configure miss: windres
 Configure miss: winscard.h presence
